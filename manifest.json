@@ -1,20 +1,26 @@
-
 {
   "manifest_version": 2,
-  "name": "MEdia Rep",
+  "name": "Media Rep",
   "version": "0.1",
+  "description": "A nutritional claims checker while you shop for you favorite food brands. It will debunk any claims on the product to make your consuming health and safe products.",
   "content_scripts": [
     {
       "matches": [
         "https://www.target.com/*",
         "http://www.target.com/"
       ],
-      "js": ["content.js"]
+      "js": [
+        "content.js"
+      ]
     }
   ],
-  "permissions": ["tabs"],
+  "permissions": [
+    "tabs"
+  ],
   "browser_action": {
     "default_popup": "popup.html",
-    "default_title": "Demo extention"
+    "default_title": "Demo extention",
+    "default_icon": "/images/logo.png",
+    "default_badge": "Media Rep"
   }
 }

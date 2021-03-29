@@ -26,9 +26,9 @@ chrome://extension to see extention
 # Technical contributors:
 
 > # David Ray Jr
-> ![Front-End Engineer](/contributersImgs/david.jpg)
+> ![Front-End Engineer](/contributorsImgs/david.jpg)
 
 > # Jhia Turner
-> ![Front-End Engineer](/contributersImgs/Jhia.PNG)
+> ![Front-End Engineer](/contributorsImgs/Jhia.PNG)
 
 
