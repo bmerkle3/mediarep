@@ -7,7 +7,7 @@ A nutritional claims checker while you shop for you favorite food brands. It wil
 > * To get this project running in development mode in your browser input:
 chrome://extension to see extention  
 > * The top right corner of chrome://extension turn on developer mode
-> * Next on the left side of chrome://extension click "load unpacked" and upload the project folder..
+> * Next on the left side of chrome://extension click "load unpacked" and upload the project folder.
 
 <br />
 <br />
