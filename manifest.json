@@ -1,0 +1,20 @@
+
+{
+  "manifest_version": 2,
+  "name": "MEdia Rep",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.target.com/*",
+        "http://www.target.com/"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": ["tabs"],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Demo extention"
+  }
+}
