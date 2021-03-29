@@ -1,6 +1,6 @@
 # Media Rep Extension
 
-A nutritional claims checker while you shop for you favorite food brands. It will debunk any claims on the product to make your consuming health and safe products.
+A nutritional claims checker. While you shop for you favorite food brand it will debunk any claims on the product to make your consuming health and safe products.
 
 <br />
 
