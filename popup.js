@@ -18,7 +18,7 @@ function setup() {
         // send a message to the content script
         let message = userinput.value();
         let msg = {
-          txt: userinput.value()
+          txt: message
         };
         chrome.tabs.sendMessage(tabs[0].id, msg);
       }
