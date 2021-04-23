@@ -1,17 +1,4 @@
-console.log("Chrome extension go?");
-
-//Demo content
-// chrome.runtime.onMessage.addListener(gotMessage);
-
-// function gotMessage(message, sender, sendResponse) {
-//   console.log(message);
-//   let paragraphs = document.getElementsByTagName("p");
-//   let imgs = document.getElementsByTagName("h1");
-//   for (elt of paragraphs) {
-//     elt.innerHTML = message.txt;
-//     elt.style["border"] = "solid 3px red";
-//   }
-// }
+console.log("Chrome extension running...");
 
 document.body.onload = addButtonElement;
 
@@ -20,8 +7,7 @@ function addButtonElement() {
   const newButton = document.createElement("button");
 
   //give the button content
-  const newContent = document.createTextNode("View claims");
-  
+  const newContent = document.createTextNode("Click to Analyze");
 
   //add the text to the button
   newButton.appendChild(newContent);
@@ -46,11 +32,9 @@ function addButtonElement() {
   const currentButton = document.getElementById("headerMain");
   document.body.insertAdjacentElement("afterbegin", newButton, currentButton);
 
-  
-
   newButton.onclick = function (e) {
     e.preventDefault();
-    window.alert("you are current on " + document.baseURI);
-  
+
+    console.log("Heads up! Labeling like 'Gluten Free' has no real health benefit unless you're celiac!");
   };
 }
