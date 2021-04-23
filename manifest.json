@@ -6,8 +6,7 @@
   "content_scripts": [
     {
       "matches": [
-        "https://www.target.com/*",
-        "http://www.target.com/"
+        "https://www.target.com/*"
       ],
       "js": [
         "content.js"

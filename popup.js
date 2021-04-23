@@ -1,16 +1,16 @@
-function setup() {
-    noCanvas();
-    let userinput = select('#userinput');
-    userinput.input(changeText);
+// function setup() {
+//     noCanvas();
+//     let userinput = select('#userinput');
+//     userinput.input(changeText);
   
-    function changeText() {
-      console.log('text changed');
+//     function changeText() {
+//       console.log('text changed');
   
-      let params = {
-        active: true,
-        currentWindow: true
-      };
-      chrome.tabs.query(params, gotTabs);
+//       let params = {
+//         active: true,
+//         currentWindow: true
+//       };
+//       chrome.tabs.query(params, gotTabs);
   
       function gotTabs(tabs) {
         console.log('got tabs');
