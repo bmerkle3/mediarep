@@ -8,15 +8,15 @@ function addButtonElement() {
   newButton.className = "taurusButton";
 
   //styling for button
-  newButton.style.background = "linear-gradient(to bottom, #2c3e50, #3498db) ";
+  newButton.style.background = "#E4572E";
   newButton.style.position = "relative";
   newButton.style.top = "12.5em";
   newButton.style.left = "50em";
   newButton.style.zIndex = 8000;
   newButton.style.color = "white";
-  newButton.style.width = "10%";
-  newButton.style.height = "30%";
-  newButton.style.borderRadius = "20px";
+  newButton.style.width = "175px";
+  newButton.style.height = "40px";
+  newButton.style.borderRadius = "10px";
   newButton.style.padding = "0.5em";
   newButton.style.boxSizing = "border-box";
 
@@ -45,7 +45,7 @@ function addButtonElement() {
       newButton.classList.remove("button-showing-debunk");
       newButton.textContent = "Click to Analyze";
       newButton.style.background =
-        "linear-gradient(to bottom, #2c3e50, #3498db) ";
+        "#E4572E";
       const modalChild = targetNode.lastChild;
       targetNode.removeChild(modalChild);
     } else {
