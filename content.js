@@ -31,6 +31,8 @@ function addButtonElement() {
     if (newButton.classList.contains("button-showing-debunk")) {
       newButton.classList.remove("button-showing-debunk");
       newButton.textContent = "Click to Analyze";
+      newButton.style.background =
+        "linear-gradient(to bottom, #2c3e50, #3498db) ";
     } else {
       newButton.classList.add("button-showing-debunk");
       newButton.textContent = "I have been clicked!";
