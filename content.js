@@ -14,6 +14,7 @@ function addButtonElement() {
   newButton.classList.add("button");
 
   //styling for button
+
   // newButton.style.background = "linear-gradient(to bottom, #2c3e50, #3498db) ";
   // newButton.style.border = "solid 2px #dfdfdf";
   // newButton.style.position = "relative";
