@@ -10,8 +10,8 @@ function addButtonElement() {
   //styling for button
   newButton.style.background = "#E4572E";
   newButton.style.position = "relative";
-  newButton.style.top = "12.5em";
-  newButton.style.left = "50em";
+  newButton.style.top = "18em";
+  newButton.style.left = "46em";
   newButton.style.zIndex = 8000;
   newButton.style.color = "white";
   newButton.style.width = "175px";
@@ -37,7 +37,10 @@ function addButtonElement() {
     // create the debunking modal
     const debunkModal = document.createElement("div");
     debunkModal.innerHTML = "debunking with some knowledge here!";
-    debunkModal.style.background = "gray";
+    debunkModal.style.background = "#fefefe";
+    debunkModal.style.boxShadow = "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
+    debunkModal.style.borderRadius = "2px";
+    debunkModal.style.padding = "12px";
     debunkModal.style.height = "100px";
 
     // logic here to link clicking with stuff happening
@@ -50,7 +53,7 @@ function addButtonElement() {
       targetNode.removeChild(modalChild);
     } else {
       newButton.classList.add("button-showing-debunk");
-      newButton.textContent = "I have been clicked!";
+      newButton.textContent = "Done";
       newButton.style.background = "black";
 
       targetNode.appendChild(debunkModal);
