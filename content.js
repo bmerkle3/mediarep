@@ -60,15 +60,15 @@ function addButtonElement() {
   newButton.className = "taurusButton";
 
   //styling for button
-  newButton.style.background = "linear-gradient(to bottom, #2c3e50, #3498db) ";
+  newButton.style.background = "#E4572E";
   newButton.style.position = "relative";
-  newButton.style.top = "12.5em";
-  newButton.style.left = "50em";
+  newButton.style.top = "18em";
+  newButton.style.left = "46em";
   newButton.style.zIndex = 8000;
   newButton.style.color = "white";
-  newButton.style.width = "10%";
-  newButton.style.height = "30%";
-  newButton.style.borderRadius = "20px";
+  newButton.style.width = "175px";
+  newButton.style.height = "40px";
+  newButton.style.borderRadius = "10px";
   newButton.style.padding = "0.5em";
   newButton.style.boxSizing = "border-box";
 
@@ -89,21 +89,24 @@ function addButtonElement() {
 
     // create the debunking modal
     const debunkModal = document.createElement("div");
-    debunkModal.innerHTML = displayText;
-    debunkModal.style.background = "gray";
-    debunkModal.style.height = "200px";
+    debunkModal.innerHTML = "Misleading claim alert! <br/> <br/>GLUTEN FREE is mostly suggested for celiac disease patients and doesn't carry any additional health advantages for others. <br/> <br/>This product has 12g of added sugar in a 36g serving size - which is 30% sugar and 40g net carbs.";
+    debunkModal.style.background = "#fefefe";
+    debunkModal.style.boxShadow = "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
+    debunkModal.style.borderRadius = "2px";
+    debunkModal.style.padding = "12px";
+    debunkModal.style.height = "300px";
 
     // logic here to link clicking with stuff happening
     if (newButton.classList.contains("button-showing-debunk")) {
       newButton.classList.remove("button-showing-debunk");
       newButton.textContent = "Click to Analyze";
       newButton.style.background =
-        "linear-gradient(to bottom, #2c3e50, #3498db) ";
+        "#E4572E";
       const modalChild = targetNode.lastChild;
       targetNode.removeChild(modalChild);
     } else {
       newButton.classList.add("button-showing-debunk");
-      newButton.textContent = "I have been clicked!";
+      newButton.textContent = "Done";
       newButton.style.background = "black";
 
       targetNode.appendChild(debunkModal);
