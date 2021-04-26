@@ -36,12 +36,12 @@ function addButtonElement() {
 
     // create the debunking modal
     const debunkModal = document.createElement("div");
-    debunkModal.innerHTML = "debunking with some knowledge here!";
+    debunkModal.innerHTML = "Misleading claim alert! <br/> <br/>GLUTEN FREE is mostly suggested for celiac disease patients and doesn't carry any additional health advantages for others. <br/> <br/>This product has 12g of added sugar in a 36g serving size - which is 30% sugar and 40g net carbs.";
     debunkModal.style.background = "#fefefe";
     debunkModal.style.boxShadow = "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
     debunkModal.style.borderRadius = "2px";
     debunkModal.style.padding = "12px";
-    debunkModal.style.height = "100px";
+    debunkModal.style.height = "300px";
 
     // logic here to link clicking with stuff happening
     if (newButton.classList.contains("button-showing-debunk")) {
